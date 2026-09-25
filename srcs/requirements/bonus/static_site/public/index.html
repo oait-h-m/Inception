@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oussama Ait H'mad - CV</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #1e293b;
+      --accent: #38bdf8;
+      --text: #f8fafc;
+      --subtext: #94a3b8;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    body { background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; display: flex; justify-content: center; }
+    .container { max-width: 800px; width: 100%; }
+    header { border-bottom: 2px solid #334155; padding-bottom: 1.5rem; margin-bottom: 2rem; text-align: center; }
+    h1 { font-size: 2.2rem; color: var(--text); margin-bottom: 0.25rem; }
+    .title { color: var(--accent); font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem; }
+    .contact { color: var(--subtext); font-size: 0.9rem; }
+    .contact a { color: var(--accent); text-decoration: none; }
+    .contact a:hover { text-decoration: underline; }
+    .summary { margin-top: 1rem; font-size: 0.95rem; text-align: left; background: var(--card); padding: 1rem; border-radius: 8px; border: 1px solid #334155; }
+    section { margin-bottom: 2rem; }
+    h2 { font-size: 1.3rem; color: var(--accent); border-bottom: 1px solid #334155; padding-bottom: 0.25rem; margin-bottom: 1rem; }
+    .item { margin-bottom: 1.5rem; }
+    .item-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.25rem; }
+    .item-title { font-weight: bold; font-size: 1.05rem; }
+    .item-subtitle { font-style: italic; color: var(--subtext); font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .item-date { color: var(--accent); font-size: 0.85rem; font-weight: 500; }
+    ul { margin-left: 1.5rem; color: #e2e8f0; font-size: 0.95rem; }
+    li { margin-bottom: 0.25rem; }
+    .skills-grid { display: grid; grid-template-columns: 1fr 2fr; gap: 0.5rem; font-size: 0.95rem; margin-bottom: 0.5rem; }
+    .skill-category { font-weight: 600; color: var(--subtext); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Oussama Ait H'mad</h1>
+      <div class="title">Software Engineering Student</div>
+      <div class="contact">
+        Benguerir, Morocco • +212 654 333 934 • oussamaaithmad@outlook.com<br>
+        <a href="https://linkedin.com/in/oait-h-m">linkedin.com/in/oait-h-m</a> • <a href="https://github.com/oait-h-m">github.com/oait-h-m</a>
+      </div>
+      <div class="summary">
+        Software Engineering student at 1337 (42 Network) specializing in systems programming (C/C++), backend development, and Linux-based infrastructure. Experienced in building HTTP servers, shell interpreters, and containerized applications through intensive, peer-reviewed engineering projects.
+      </div>
+    </header>
+
+    <section>
+      <h2>Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-category">Languages:</div>
+        <div>C, C++, Python, Shell/Bash</div>
+        <div class="skill-category">Systems & Low-Level:</div>
+        <div>Unix/Linux systems programming, memory management, multithreading/processes, socket programming</div>
+        <div class="skill-category">Backend & Web:</div>
+        <div>RESTful APIs, HTTP servers, Django/Flask</div>
+        <div class="skill-category">DevOps & Infra:</div>
+        <div>Docker, Docker Compose, NGINX, Git/GitHub, Linux server administration</div>
+        <div class="skill-category">Tools & Practices:</div>
+        <div>Vim/VS Code, Makefile, Valgrind, GDB, peer code review, Agile/pair programming</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Key Engineering Projects</h2>
+      
+      <div class="item">
+        <div class="item-header">
+          <span class="item-title">ft_irc</span>
+        </div>
+        <div class="item-subtitle">C++, TCP/IP, Socket Programming, Non-blocking I/O, Linux</div>
+        <ul>
+          <li>Developed a multi-client IRC server in C++ implementing the IRC protocol (RFC 1459), handling multiple simultaneous client connections via non-blocking I/O, channel management, and user authentication.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="item-title">Minishell</span>
+        </div>
+        <div class="item-subtitle">C, Linux, Systems Programming, Process Management</div>
+        <ul>
+          <li>Built a Unix shell in C replicating core Bash functionality, including command parsing, piping, I/O redirection, environment variable handling, and built-in commands, with proper signal handling.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="item-title">Inception</span>
+        </div>
+        <div class="item-subtitle">Docker, Docker Compose, NGINX, MariaDB, WordPress, Bash</div>
+        <ul>
+          <li>Deployed a multi-service infrastructure using Docker and Docker Compose, configuring NGINX, WordPress, and MariaDB in separate containers following security best practices.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="item-title">Younity</span>
+        </div>
+        <div class="item-subtitle">Backend Developer (Python/Django, PostgreSQL, Docker)</div>
+        <ul>
+          <li>Built the backend for a campus event platform enabling verified student identity, privacy-first event targeting, and reliable registration for university hackathons, workshops, and clubs.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Education & Extracurriculars</h2>
+      
+      <div class="item">
+        <div class="item-header">
+          <span class="item-title">1337 Coding School (42 Network) UM6P</span>
+          <span class="item-date">Oct 2024 - Present</span>
+        </div>
+        <div class="item-subtitle">Benguerir, Morocco</div>
+        <ul>
+          <li>Software Engineering Program: Systems Programming, Data Structures & Algorithms, Network Architectures, Concurrent Programming, Unix System Administration.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="item-title">Cultural Heritage Hackathon UM6P Rabat</span>
+          <span class="item-date">Jul 2025</span>
+        </div>
+        <ul>
+          <li>Collaborated in a team of 5 to design a human-centered technology solution for preserving Moroccan cultural heritage; selected for continued development at the HCI Showcase.</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
