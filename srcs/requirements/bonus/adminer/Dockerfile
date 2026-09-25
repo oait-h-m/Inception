@@ -15,5 +15,4 @@ WORKDIR /var/www/html
 
 EXPOSE 8080
 
-# Start PHP's built-in web server
 CMD ["php", "-S", "0.0.0.0:8080", "-t", "/var/www/html"]
