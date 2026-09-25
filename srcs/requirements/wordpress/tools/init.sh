@@ -26,6 +26,16 @@ if [ ! -f "wp-config.php" ]; then
     echo "Creating author user..."
     wp user create --allow-root ${WP_USER} ${WP_EMAIL} --user_pass=${WP_PASS} --role=author
 
+    echo "Configuring Redis Object Cache..."
+    wp config set WP_REDIS_HOST redis --allow-root
+    wp config set WP_REDIS_PORT 6379 --raw --allow-root
+    wp config set WP_REDIS_PASSWORD "${REDIS_PASSWORD}" --allow-root
+    wp config set WP_CACHE true --raw --allow-root
+
+    echo "Installing and activating Redis plugin..."
+    wp plugin install redis-cache --activate --allow-root
+    wp redis enable --allow-root
+
     echo "WordPress installed successfully."
 fi
 
