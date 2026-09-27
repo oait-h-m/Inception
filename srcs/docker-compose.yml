@@ -53,8 +53,6 @@ services:
     restart: always
     env_file:
       - .env
-    volumes:
-      - redis_data:/data
     networks:
       - inception
     expose:
@@ -134,13 +132,6 @@ volumes:
       type: none
       o: bind
       device: /home/oait-h-m/data/wordpress
-
-  redis_data:
-    driver: local
-    driver_opts:
-      type: none
-      o: bind
-      device: /home/oait-h-m/data/redis
 
   portainer_data:
     driver: local
