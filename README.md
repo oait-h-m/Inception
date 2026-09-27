@@ -43,15 +43,14 @@ Docker is utilized to isolate dependencies, ensuring that the web server, applic
 
 ### Resources
 
-**Classic References**
 
--Infrastructure Architecture Diagram: [https://www.tldraw.com/f/2gXqQM5-u5zlqqYqx5IJO](Visual representation of the project's network, containers, and data flow).
+**-Infrastructure Architecture Diagram:** [https://www.tldraw.com/f/2gXqQM5-u5zlqqYqx5IJO](Visual representation of the project's network, containers, and data flow).
 
--Docker Documentation: [https://docs.docker.com/] (Compose file references, Dockerfile instructions, network architecture).
+**-Docker Documentation:** [https://docs.docker.com/] (Compose file references, Dockerfile instructions, network architecture).
 
--NGINX Documentation: [https://nginx.org/en/docs/] (TLS termination, FastCGI configuration, server blocks).
+**-NGINX Documentation:** [https://nginx.org/en/docs/] (TLS termination, FastCGI configuration, server blocks).
 
--MariaDB Knowledge Base: [https://mariadb.com/kb/en/] (User creation, privileges, and database initialization).
+**-MariaDB Knowledge Base:** [https://mariadb.com/kb/en/] (User creation, privileges, and database initialization).
 
--WordPress Developer Resources: [https://developer.wordpress.org/cli/commands/] (WP-CLI automation for non-interactive installation).
+**-WordPress Developer Resources:** [https://developer.wordpress.org/cli/commands/] (WP-CLI automation for non-interactive installation).
 
