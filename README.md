@@ -40,3 +40,18 @@ Docker is utilized to isolate dependencies, ensuring that the web server, applic
 2. Ensure the local domain name is routed to your localhost. Add the following to your `/etc/hosts` file:
    ```text
    127.0.0.1   oait-h-m.42.fr
+
+### Resources
+
+**Classic References
+
+Infrastructure Architecture Diagram: [https://www.tldraw.com/f/2gXqQM5-u5zlqqYqx5IJO](Visual representation of the project's network, containers, and data flow).
+
+Docker Documentation: [https://docs.docker.com/] (Compose file references, Dockerfile instructions, network architecture).
+
+NGINX Documentation: [https://nginx.org/en/docs/] (TLS termination, FastCGI configuration, server blocks).
+
+MariaDB Knowledge Base: [https://mariadb.com/kb/en/] (User creation, privileges, and database initialization).
+
+WordPress Developer Resources: [https://developer.wordpress.org/cli/commands/] (WP-CLI automation for non-interactive installation).
+
