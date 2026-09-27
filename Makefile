@@ -13,7 +13,6 @@ clean: down
 	docker compose -f $(COMPOSE_FILE) down -v
 
 fclean: clean
-	sudo rm -rf /home/oait-h-m/data/mariadb/*
 	sudo rm -rf /home/oait-h-m/data/wordpress/*
 
 re: fclean all
